@@ -2,16 +2,15 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-let defaultTextColor = '#666';
 let defaultStyle ={
-  color: defaultTextColor
+  color: "white"
 };
 
 
 class Aggregate extends Component {
   render() {
     return (
-      <div style={{ ...defaultTextColor, width: '40%', display: 'inline-block'}}>
+      <div style={{ ...defaultStyle, width: '40%', display: 'inline-block'}}>
         <h2 >Number Text</h2>
       </div>
     );
@@ -49,7 +48,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Title</h1>
+        <h1 style={{ ...defaultStyle }}>Title</h1>
         <Aggregate/>
         <Aggregate/>
         <Filter/>
